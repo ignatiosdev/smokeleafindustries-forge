@@ -9,5 +9,6 @@ Bugfixes:
 
 - Joint and Blunt must give less nausea
 - Add new weed strain with strength
+- Remove the ability to speed up crops with bonemeal
 - Reformat bong and dab to be COnsumableWeedItem.
     - Bong causes less damage but more nausea
