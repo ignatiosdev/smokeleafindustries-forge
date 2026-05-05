@@ -7,8 +7,7 @@ Bugfixes:
 - - Weed Liquifier (extracter) -> power right side
 
 
-0.5.0:
-- Add Herb Dryer Machine     -> Produces Dried Herbs from Fresh Herbs
-- Add Herb Drying Rack       -> Produces Dried Herbs from Fresh Herbs without power (much slower)
-- Modify BaseBudItem to have a state of wet/dry and a drying time
-
+- Joint and Blunt must give less nausea
+- Add new weed strain with strength
+- Reformat bong and dab to be COnsumableWeedItem.
+    - Bong causes less damage but more nausea

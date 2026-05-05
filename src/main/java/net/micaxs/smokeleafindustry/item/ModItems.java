@@ -108,9 +108,9 @@ public class ModItems {
 
     // Consumables
     public static final RegistryObject<Item> BLUNT = ITEMS.register("blunt",
-            () -> new WeedDerivedItem(new Item.Properties().stacksTo(64), 1, 0.5f, UseAnim.BOW));
+            () -> new ConsumableWeedItem(new Item.Properties().durability(10), 2, 0.2f, UseAnim.BOW, 10, 3f));
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
-            () -> new WeedDerivedItem(new Item.Properties().stacksTo(64), 1, 0.5f, UseAnim.BOW));
+            () -> new ConsumableWeedItem(new Item.Properties().durability(5), 2, 0.1f, UseAnim.BOW, 5, 1f));
     public static final RegistryObject<Item> HERB_CAKE = ITEMS.register("herb_cake",
             () -> new WeedDerivedItem(new Item.Properties().food(ModFoods.HERB_CAKE), 1.5f, 1f, UseAnim.EAT, 50));
     public static final RegistryObject<Item> HASH_BROWNIE = ITEMS.register("hash_brownie",

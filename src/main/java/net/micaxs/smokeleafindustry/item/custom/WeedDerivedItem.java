@@ -25,10 +25,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class WeedDerivedItem extends Item {
-    private final float effectDurationMultiplier;
-    private final float stonedChance;
-    private final UseAnim useAnimation;
-    private final int useDuration;
+    protected final float effectDurationMultiplier;
+    protected final float stonedChance;
+    protected final UseAnim useAnimation;
+    protected final int useDuration;
 
     public WeedDerivedItem(Properties pProperties, float effectDurationMultiplier, float stonedChance, UseAnim useAnimation) {
         this(pProperties, effectDurationMultiplier, stonedChance, useAnimation, 20);
