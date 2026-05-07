@@ -127,7 +127,7 @@ public class BaseWeedCropBlock extends CropBlock {
 
     @Override
     public boolean isValidBonemealTarget(LevelReader world, BlockPos pos, BlockState state, boolean isClient) {
-        return !this.isMaxAge(state) && !state.getValue(TOP);
+        return false;
     }
 
     @Override
