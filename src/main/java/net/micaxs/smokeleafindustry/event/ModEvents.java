@@ -235,13 +235,13 @@ public class ModEvents {
                                         durationToAdd, prevDuration + durationToAdd);
                 }
 
-                // Stoned effect
+                // 50% chance to add 2 seconds of stoned per charge consumed.
                 if (entity.level().random.nextDouble() <= 0.5f) {
                         int prevStonedDuration = 0;
                         if (entity.hasEffect(ModEffects.STONED.get())) {
                                 prevStonedDuration = entity.getEffect(ModEffects.STONED.get()).getDuration();
                         }
-                        int stonedDurationToAdd = (int) (100 * consumableWeed.getEffectFactor());
+                        int stonedDurationToAdd = 40;
                         entity.addEffect(new MobEffectInstance(ModEffects.STONED.get(),
                                         prevStonedDuration + stonedDurationToAdd, 1));
                         LOGGER.info("[ConsumableWeed] STONED APPLIED (new duration: {})",
